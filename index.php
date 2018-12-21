@@ -16,7 +16,7 @@ setTimeout(function(){
 <html>
 
     <head>
-        <title>Company - Login</title>
+        <title>Wegenbeheer - Login</title>
     </head>
 
     <body class="w3-display-middle w3-center">
