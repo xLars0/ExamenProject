@@ -1,0 +1,199 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+th {
+    background-color: #9c9c9c;
+}
+
+tr:hover {
+    background-color: #42b3d644;
+}
+
+.inlog-hr{
+    border-top: 1px solid #2978d1 !important;
+}
+
+.companyblue {
+    background-color: #2978d1;
+    color: white;
+}
+
+.startview {
+	margin-top: 10px;
+}
+
+.inputlogin {
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 15px 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(230, 227, 227);
+	white-space: nowrap;
+}
+
+.buttonview {
+	background-color:#2978d1;
+	color: white;
+}
+
+.buttonview:hover {
+	background-color: gainsboro;
+	color: black;
+}
+
+.pagemargin {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 3%;
+}
+
+.pagescroll {
+    height: 550px;
+    overflow-y: auto;
+}
+
+.addbutton {
+    background-color: rgb(34, 177, 34);
+    color: white;
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+.editbutton {
+    float: right;
+    padding: 13px 20px;
+    margin-right: 2%;
+}
+
+.addimg {
+    -moz-user-select: none;
+    width: 22px;
+    height: 22px;
+    margin: 0px !important;
+}
+
+.cardview {
+    padding:1%;
+    width:19%;
+    height: 260px;
+    float: left;
+    margin: 0.5%;
+}
+
+.infoview {
+    background-color: #e6e3e3;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 3%;
+    height: 620px;
+}
+
+.infopadding {
+    padding-left: 7%;
+    padding-top: 25px;
+    padding-bottom: 11px;
+    height: 218px;
+}
+
+.projectpadding {
+    padding-left: 10%;
+    padding-top: 25px;
+    padding-bottom: 11px;
+    height: 190px;
+}
+
+.infotext {
+	margin-left: 3%;
+	float:left;
+}
+
+.info-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #cccbcb, #2978d1, #cccbcb);
+    width:97%;
+    margin-left:1.5%;
+    margin-right:1.5%;
+}
+
+.infomargin {
+    margin-left:33%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    height: 250px;
+}
+
+.projinfomargin {
+    margin-left:40%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    height: 250px;
+}
+
+.infoicon {
+	width: 15px;
+	height: 15px;
+	margin-top: 6px;
+	margin-right: 8px;
+    float: left;
+    -moz-user-select: none;
+}
+
+.imgsize {
+    -moz-user-select: none;
+    width:190px;
+    height:190px;
+    float: left;
+}
+
+.editbuttons {
+    margin-left: 33%;
+}
+
+.editimg {
+    -moz-user-select: none;
+    width:232px;
+    height:232px;
+    float: left;
+}
+
+.list-margin {
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: auto;
+    max-height: 365px;
+    background-color: white;
+}
+
+.add-list {
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: auto;
+    max-height: 365px;
+}
+
+.add-margin {
+    border: none;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+	white-space: nowrap;
+}
+
+.devView {
+    background-color: #e6e3e3;
+    /* margin-left: 6%;
+    margin-right: 6%; */
+    /* margin-top: 3%; */
+    height: 550px;
+}
