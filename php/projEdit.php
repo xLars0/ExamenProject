@@ -21,7 +21,7 @@ include ('functions/projEditFunction.php');
         <div class=" w3-card-3 w3-round">
         <?php
             $projectID = $_GET['id'];
-            
+
             $query = $dbh->prepare("SELECT * FROM projects WHERE id = :projectID");
             $query->bindParam(":projectID", $projectID, PDO::PARAM_INT);
             $query->execute();
@@ -29,7 +29,7 @@ include ('functions/projEditFunction.php');
             $searchCount = $query->rowCount();
 
             if($searchCount != 0) {
-            
+
                 $data = $query->fetchAll();
                 foreach($data as $row) {
                 $id = $row["id"];
@@ -60,7 +60,7 @@ include ('functions/projEditFunction.php');
                 }else{
 
                     ?><h1 class='w3-display-middle'>Gebruiker bestaat niet.</h1><?php
-                                
+
                 }
         ?>
         </div>

@@ -1,10 +1,10 @@
-<table id="tablediv" class="w3-card w3-margin-top w3-table">
+<!-- <table id="tablediv" class="w3-card w3-margin-top w3-table">
             <tr>
                 <th>Projectnaam</th>
                 <th>Locatie</th>
                 <th>Deadline</th>
             </tr>
-<?php
+?php
 
 function search($text) {
 
@@ -58,4 +58,4 @@ function search($text) {
 
 search($_GET['txt']);
 ?>
-</table>
+</table> -->
