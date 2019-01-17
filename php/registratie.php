@@ -36,10 +36,24 @@ $pwCheck = "";
                 <input class="startview inputlogin w3-round" type="password" name="cPassword" placeholder="Wachtwoord bevestigen *" title="Benodigd veld">
                 <br>
                 <select class="startview inputlogin w3-select w3-round" name="type">
-                  <option value="0" disabled selected value>Registreer als</option>
+                  <option value="0" disabled selected value>Selecteer een organisatie</option>
+                  <option value="1">Asfaltmanagement Gelderland-Zuid</option>
+                  <option value="2">Rijkswaterstaat Gelderland-Zuid</option>
+                  <option value="3">Asfaltmanagement Gelderland-Noord</option>
+                  <option value="4">Rijkswaterstaat Gelderland-Noord</option>
+                  <option value="5">Asfaltmanagement Gelderland-Oost</option>
+                  <option value="6">Rijkswaterstaat Gelderland-Oost</option>
+                  <option value="7">Asfaltmanagement A12VEG</option>
+                  <option value="8">Rijkswaterstaat A12VEG</option>
+                  <option value="9">Asfaltmanagement N18</option>
+                  <option value="10">Rijkswaterstaat N18</option>
+                </select>
+                <br>
+                <select class="startview inputlogin w3-select w3-round" name="type">
+                  <option value="0" disabled selected value>Selecteer uw rol</option>
                   <option value="1">Administrator</option>
-                  <option value="2">Toezichthouder</option>
-                  <option value="3">Developer</option>
+                  <option value="2"></option>
+                  <option value="3"></option>
                 </select>
                 <br>
                 <?php if($pwCheck != "") echo $pwCheck; ?>

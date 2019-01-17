@@ -13,7 +13,7 @@ include ('functions/projEditFunction.php');
 <!doctype html>
 <html>
 <head>
-    <title>Company - Project aanpassen</title>
+    <title>Wegenbeheer - Project aanpassen</title>
 </head>
 
     <body>
