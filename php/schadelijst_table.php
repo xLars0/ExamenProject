@@ -16,39 +16,35 @@ $searchUrl = "functions/schadelijst_table.php";
     </head>
 
     <body>
-      <table>
-        <thead>
-            <tr>
+      <div style="overflow-x:auto;">
+        <table class="w3-hoverable">
+          <tr>
               <?php
-              $stmt = $dbh->query("SELECT * FROM schade");
+              $stmt = $dbh->query("SHOW COLUMNS FROM schade");
+              $column_names = array();
+              $count = 0;
               while ($row = $stmt->fetch()) {
-                  //echo $row['name']."<br />\n";
+                  $column_names[$count] = $row['Field'];
+                  $count++;
+                  if($row['Field'] == "id"){
+                    echo "<th style=\"display: none;\">{$row['Field']}</th>";
+                  } else {
+                    echo "<th>{$row['Field']}</th>";
+                  }
                 }
-                echo count($row);
                ?>
-                <td>Id</td>
-                <td>Name</td>
-            </tr>
-        </thead>
-        <tbody>
-        <?php
-            /*$connect = mysql_connect("localhost","root", "root");
-            if (!$connect) {
-                die(mysql_error());
-            }
-            mysql_select_db("apploymentdevs");
-            $results = mysql_query("SELECT * FROM demo LIMIT 10");
-            while($row = mysql_fetch_array($results)) {
-            ?>
-                <tr>
-                    <td><?php echo $row['Id']?></td>
-                    <td><?php echo $row['Name']?></td>
-                </tr>
-
+          </tr>
             <?php
-          }*/
+            $stmt = $dbh->query("SELECT * FROM `schade`");
+            while ($row = $stmt->fetch()) {
+                echo "<tr>";
+                foreach ($column_names as $column_name) {
+                  echo "<td> {$row["{$column_name}"]} </td>";
+                }
+                echo "</tr>";
+              }
             ?>
-          </tbody>
         </table>
+      </div>
     </body>
 </html>

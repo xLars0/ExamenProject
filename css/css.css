@@ -22,6 +22,16 @@ tr:hover {
     color: white;
 }
 
+.companylightgreen {
+  background-color: #00a950;
+  color: black;
+}
+
+.companydarkgreen {
+  background-color: #005030;
+  color: White;
+}
+
 .startview {
 	margin-top: 10px;
 }
