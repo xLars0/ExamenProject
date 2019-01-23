@@ -17,32 +17,46 @@ $searchUrl = "functions/schadelijst_table.php";
 
     <body>
       <div style="overflow-x:auto;">
-        <table class="w3-hoverable">
+        <table class="w3-hoverable w3-striped">
           <tr>
               <?php
-              $stmt = $dbh->query("SHOW COLUMNS FROM schade");
-              $column_names = array();
+
+              try
+              {
+                $data = $dbh->query("SHOW COLUMNS FROM schade")->fetchAll();
+              } catch(Exception $e) {
+                var_dump($e->getMessage());
+              }
+
               $count = 0;
-              while ($row = $stmt->fetch()) {
-                  $column_names[$count] = $row['Field'];
-                  $count++;
-                  if($row['Field'] == "id"){
-                    echo "<th style=\"display: none;\">{$row['Field']}</th>";
-                  } else {
-                    echo "<th>{$row['Field']}</th>";
-                  }
+
+              foreach ($data as $row) {
+                $column_names[$count] = $row[0];
+                $count++;
+                if($row[0] == "id"){
+                  echo "<th style=\"display: none;\">{$row[0]}</th>";
+                } else {
+                  echo "<th>{$row[0]}</th>";
                 }
+              }
                ?>
           </tr>
             <?php
-            $stmt = $dbh->query("SELECT * FROM `schade`");
-            while ($row = $stmt->fetch()) {
-                echo "<tr>";
-                foreach ($column_names as $column_name) {
-                  echo "<td> {$row["{$column_name}"]} </td>";
-                }
-                echo "</tr>";
+
+            try
+            {
+              $data = $dbh->query("SELECT * FROM `schade`")->fetchAll();
+            } catch(Exception $e) {
+              var_dump($e->getMessage());
+            }
+
+            foreach ($data as $row) {
+              echo "<tr>";
+              foreach ($column_names as $column_name) {
+                echo "<td> {$row["{$column_name}"]} </td>";
               }
+              echo "</tr>";
+            }
             ?>
         </table>
       </div>

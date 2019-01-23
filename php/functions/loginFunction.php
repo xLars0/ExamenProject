@@ -8,7 +8,7 @@ if(isset($_POST['login'])){
     $query = $dbh->prepare("SELECT id, password, usertype FROM users WHERE username = :username");
     $query->bindParam(":username", $username);
     $query->execute();
-    
+
     $searchCount = $query->rowCount();
 
     if($searchCount != 0) {
@@ -20,7 +20,7 @@ if(isset($_POST['login'])){
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['usertype'] = $row['usertype'];
                     $_SESSION['username'] = $username;
-                    header("Location: php/projectPage.php");
+                    header("Location: php/schadelijst_table.php");
                 }
             }
         }else{
