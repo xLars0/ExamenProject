@@ -6,6 +6,9 @@ $searchUrl = "functions/schadelijst_table.php";
 ?>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script src="../js/js.js"></script>
 
 <script> var searchUrl = "functions/schadelijst_table.php"; </script>
 <?php //include ('functions/projectFunction.php'); ?>
@@ -16,9 +19,9 @@ $searchUrl = "functions/schadelijst_table.php";
     </head>
 
     <body>
-      <div style="overflow-x:auto;">
+      <div style="overflow-x: scroll;">
         <table class="w3-hoverable w3-striped">
-          <tr>
+          <tbody>
               <?php
 
               try
@@ -40,7 +43,7 @@ $searchUrl = "functions/schadelijst_table.php";
                 }
               }
                ?>
-          </tr>
+          </thead>
             <?php
 
             try
