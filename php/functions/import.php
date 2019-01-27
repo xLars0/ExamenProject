@@ -94,6 +94,8 @@ if(isset($_POST["Import"]))
 {
   $excel_column_row = 2;
 
+  $dbh->query("TRUNCATE schade");
+
     //echo $filename=$_FILES["file"]["tmp_name"];
     if($_FILES["file"]["size"] > 0)
     {
@@ -125,6 +127,7 @@ if(isset($_POST["Import"]))
 
               try
               {
+                //$dbh->query("TRUNCATE schade");
                 $dbh->exec("INSERT into schade({$current_columns}) values ({$current_values});");
               } catch(Exception $e) {
                 var_dump($e->getMessage());
@@ -197,6 +200,7 @@ if(isset($_POST["Create"]))
 
         try
         {
+          $dbh->exec("DROP TABLE schade");
           $dbh->exec($query);
           //echo "Query executed: <br>";
           //echo $query;
