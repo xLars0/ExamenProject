@@ -16,12 +16,12 @@ setTimeout(function(){
 <html>
 
     <head>
-        <title>Wegenbeheer - Login</title>
+        <title>QaTool - Login</title>
     </head>
 
     <body class="w3-display-middle w3-center">
 
-        <img src="img/logo.png" draggable="false" style="-moz-user-select: none; width:230px; height:175px;">
+        <img src="img/QaToolLogo.png" draggable="false" style="-moz-user-select: none; width:230px; height:175px;">
         <hr class="inlog-hr">
         <form autocomplete="off" method="post" action="index.php" name="login">
             <input class="startview inputlogin w3-round" type="text" name="username" placeholder="Gebruikersnaam">
