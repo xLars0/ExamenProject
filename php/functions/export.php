@@ -24,8 +24,10 @@ foreach ($columns_bad as $column) {
   $count++;
 }
 
+//$date = date('d/m/Y h:i', time());
+
 // Make an CSV file from database data.
-$fp = fopen('schadelijst.csv', 'w');
+$fp = fopen("schadelijst.csv", 'w');
 
 $delimiter = ';';
 fputcsv($fp, $columns, $delimiter);
