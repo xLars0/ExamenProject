@@ -64,7 +64,7 @@ if($_SESSION['usertype'] == '3'){
                   }
                 }
                ?>
-          <button type="submit" class="w3-center w3-btn w3-round w3-margin companyblue" id="saveButton" name="Update" value="Update">Save</button>
+          <button type="submit" class="w3-center w3-btn w3-round w3-margin companylightblue" id="saveButton" name="Update" value="Update">Save</button>
         </form>
       </div>
     </body>

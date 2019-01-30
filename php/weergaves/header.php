@@ -3,7 +3,7 @@
 <?php
 session_start();
 ?>
-  <div style="padding: 5px;" class="w3-bar companyblue w3-card">
+  <div style="padding: 5px;" class="w3-bar companydarkblue w3-card">
     <a href="schadelijst_table.php" class="w3-bar-item w3-button">Schadelijst</a>
     <?php
     if($_SESSION['usertype'] == '1'){
