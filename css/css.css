@@ -17,8 +17,18 @@ tr:hover {
     border-top: 1px solid #2978d1 !important;
 }
 
-.companyblue {
-    background-color: #2978d1;
+.companyshadowblue {
+    background-color: #b7d7f1;
+    color: white;
+}
+
+.companydarkblue {
+    background-color: #0073ae;
+    color: white;
+}
+
+.companylightblue {
+    background-color: #0397d6;
     color: white;
 }
 
@@ -206,4 +216,10 @@ tr:hover {
     margin-right: 6%; */
     /* margin-top: 3%; */
     height: 550px;
+}
+
+#saveButton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }

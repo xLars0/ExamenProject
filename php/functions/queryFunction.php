@@ -76,7 +76,7 @@ function CreateQueryColumns($data){
   return $total_column;
 }
 
-// Creates the value part for the insert query. Send an array of columns and it return an partial query.
+// Creates the value part for the insert query. Send an array of values and it return an partial query.
 function CreateQueryValues($data){
   $total_value = "";
   for ($i=0; $i < (count($data)); $i++) {

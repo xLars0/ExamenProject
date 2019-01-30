@@ -15,7 +15,9 @@ if($_SESSION['usertype'] == '3'){
 
     <body>
         <div class="pagemargin">
-          <form class="w3-display-middle w3-center" enctype="multipart/form-data" method="post" role="form" action="./functions/import.php">
+          <?php include "functions/import.php"; ?>
+
+          <form class="w3-display-middle w3-center" enctype="multipart/form-data" method="post" role="form" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <h2 class="w3margin">Selecteer een CSV bestand</h2>
             <br>
             <input class="w3-margin" type="file" name="file" id="file" size="150">

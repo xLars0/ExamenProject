@@ -48,7 +48,12 @@ if(isset($_POST["Update"]))
       {
         $dbh->exec($query);
       } catch(Exception $e) {
-        var_dump($e->getMessage());
+        //var_dump($e->getMessage());
+        echo "
+        <div class=\"w3-panel w3-red\">
+          <h3>Fout</h3>
+          <p>Er is iets fout gegaan bij het aanpassen van de database data.</p>
+        </div>";
       }
     }
   }

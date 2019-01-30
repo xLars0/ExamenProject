@@ -11,7 +11,6 @@ $searchUrl = "functions/schadelijst_table.php";
 <script src="../js/js.js"></script>
 
 <script> var searchUrl = "functions/schadelijst_table.php"; </script>
-<?php //include ('functions/projectFunction.php'); ?>
 
 <html>
     <head>
@@ -28,11 +27,17 @@ $searchUrl = "functions/schadelijst_table.php";
               {
                 $data = $dbh->query("SHOW COLUMNS FROM schade")->fetchAll();
               } catch(Exception $e) {
-                var_dump($e->getMessage());
+                //var_dump($e->getMessage());
+                echo "
+                <div class=\"w3-panel w3-red\">
+                  <h3>Fout</h3>
+                  <p>Er is iets fout gegaan bij het ophalen van de kolommen.</p>
+                </div>";
               }
 
               $count = 0;
 
+              // Create a column for each column in the database.
               foreach ($data as $row) {
                 $column_names[$count] = $row[0];
                 $count++;
@@ -49,8 +54,14 @@ $searchUrl = "functions/schadelijst_table.php";
                 $data = $dbh->query("SELECT * FROM `schade`")->fetchAll();
               } catch(Exception $e) {
                 var_dump($e->getMessage());
+                echo "
+                <div class=\"w3-panel w3-red\">
+                  <h3>Fout</h3>
+                  <p>Er is iets fout gegaan bij het ophalen van de data.</p>
+                </div>";
               }
 
+              // Create table rows for each row in the database.
               foreach ($data as $row) {
                 echo "<tr>";
                 for ($i=0; $i < count($column_names); $i++) {
