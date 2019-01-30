@@ -1,6 +1,13 @@
 <?php
 include "../db/dbConnect.php";
 
+// Remove all old files.
+$files = glob('schadelijsten/*');
+foreach($files as $file){
+  if(is_file($file))
+    unlink($file);
+}
+
 // Create temporary table, remove id column, select all and delete temporary table.
 // The exported file now doesnt have database id`s in it.
 try
@@ -38,4 +45,9 @@ foreach ($rows as $row) {
 
 fclose($fp);
 
+$date = date('d.m.Y,H.i', time());
+$new_name = "asfaltlijst{$date}.csv";
+
+copy("schadelijst.csv","schadelijsten/schadelijst_temporary.csv");
+rename("schadelijsten/schadelijst_temporary.csv", "schadelijsten/{$new_name}");
  ?>
