@@ -69,7 +69,7 @@ $searchUrl = "functions/schadelijst_table.php";
                     echo "<td>
                       <form enctype=\"multipart/form-data\" method=\"post\" role=\"form\" action=\"detailPage.php\">
                         <input style=\"display: none;\" type=\"text\" name=\"id\" value=\"{$row["{$column_names["{$i}"]}"]}\">
-                        <button type=\"submit\" class=\"w3-btn w3-round companylightblue\" name=\"Import\" value=\"Import\">Edit</button>
+                        <button type=\"submit\" class=\"w3-btn w3-round hoverButton companylightblue\" name=\"Import\" value=\"Import\">Edit</button>
                       </form>
                     </td>";
                   } else {
