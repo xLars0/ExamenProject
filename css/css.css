@@ -22,6 +22,11 @@ tr:hover {
     color: white;
 }
 
+.hoverButton:hover {
+    background-color: #0397d6 !important;
+    color: white !important;
+}
+
 .companydarkblue {
     background-color: #0073ae;
     color: white;
@@ -60,8 +65,13 @@ tr:hover {
 }
 
 .buttonview {
-	background-color:#0397d6;
+	background-color: #0397d6;
 	color: white;
+}
+
+.buttonview:hover {
+  background-color: #0073ae !important;
+  color: white;
 }
 
 .buttonview:hover {

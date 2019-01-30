@@ -29,7 +29,7 @@ setTimeout(function(){
             <input class="startview inputlogin w3-round" type="password" name="password" placeholder="Wachtwoord">
             <br>
             <?php if($loginCheck != "") echo $loginCheck; ?>
-            <input class="startview buttonview w3-button w3-round" type="submit" name="login" value="Inloggen">
+            <input class="startview buttonview w3-button w3-round hoverButton" type="submit" name="login" value="Inloggen">
         </form>
         <hr class="inlog-hr">
     </body>

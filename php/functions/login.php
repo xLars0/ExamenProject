@@ -16,6 +16,6 @@
 
         <form method="post" name="logout">
             Welkom, <?php echo $_SESSION['username']; ?>
-            <input class="w3-button companyblue" type="submit" name="logout" value="Uitloggen">
+            <input class="w3-button companyblue hoverButton" type="submit" name="logout" value="Uitloggen">
         </form>
 </div>

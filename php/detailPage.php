@@ -3,16 +3,12 @@ $includePath = "../";
 include $includePath.('include/include.php');
 include "../db/dbConnect.php";
 include "functions/saveDetailPage.php";
-
-if($_SESSION['usertype'] == '3'){
-    header("Location: projectPage.php");
-}
 ?>
 
 <html>
 
 <head>
-    <title>Company - Project</title>
+    <title>Qatool - Detailpagina</title>
 </head>
 
     <body>

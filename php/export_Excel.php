@@ -3,15 +3,15 @@ $includePath = "../";
 include $includePath.('include/include.php');
 include "functions/export.php";
 
-if($_SESSION['usertype'] == '3'){
-    header("Location: projectPage.php");
+if($_SESSION['usertype'] > '3'){
+    header("Location: schadelijst_table.php");
 }
 ?>
 
 <html>
 
 <head>
-    <title>Company - Project</title>
+    <title>QaTool - Exporteren</title>
 </head>
 
     <body>

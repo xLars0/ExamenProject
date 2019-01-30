@@ -14,7 +14,7 @@ $searchUrl = "functions/schadelijst_table.php";
 
 <html>
     <head>
-        <title>Company - Schadelijst</title>
+        <title>QaTool - Schadelijst</title>
     </head>
 
     <body>
