@@ -13,12 +13,10 @@ session_start();
         <a href="export_Excel.php" class="w3-bar-item w3-button">Exporteren</a><?php
     }elseif($_SESSION['usertype'] == '2'){
       ?>
-      <a href="registratie.php" class="w3-bar-item w3-button">Registratie</a>
       <a href="import_Excel.php" class="w3-bar-item w3-button">Importeren</a>
       <a href="export_Excel.php" class="w3-bar-item w3-button">Exporteren</a><?php
     }elseif($_SESSION['usertype'] == '3'){
       ?>
-      <a href="registratie.php" class="w3-bar-item w3-button">Registratie</a>
       <a href="import_Excel.php" class="w3-bar-item w3-button">Importeren</a>
       <a href="export_Excel.php" class="w3-bar-item w3-button">Exporteren</a><?php
     }

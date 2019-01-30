@@ -22,6 +22,7 @@ setTimeout(function(){
     <body class="w3-display-middle w3-center">
 
         <img src="img/QaToolLogo.png" draggable="false" style="-moz-user-select: none; width:230px; height:175px;">
+        <hr class="inlog-hr">
         <form autocomplete="off" method="post" action="index.php" name="login">
             <input class="startview inputlogin w3-round" type="text" name="username" placeholder="Gebruikersnaam">
             <br>
@@ -30,6 +31,7 @@ setTimeout(function(){
             <?php if($loginCheck != "") echo $loginCheck; ?>
             <input class="startview buttonview w3-button w3-round" type="submit" name="login" value="Inloggen">
         </form>
+        <hr class="inlog-hr">
     </body>
 
 </html>
