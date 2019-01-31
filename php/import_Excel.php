@@ -25,8 +25,8 @@ if($_SESSION['usertype'] > '3'){
 
             <button type="submit" class="w3-btn w3-round w3-margin companylightblue" name="Import" value="Import">Upload</button>
             <br>
-            <button type="submit" class="w3-btn w3-round w3-margin companylightblue" name="Create" value="Create">Create</button>
-            <br>
+            <!--<button type="submit" class="w3-btn w3-round w3-margin companylightblue" name="Create" value="Create">Create</button>
+            <br>-->
           </form>
         </div>
     </body>

@@ -110,7 +110,8 @@ if(isset($_POST["Import"]))
   SendResponse($error);
 }
 
-// Creates new table with given columns
+// Creates new table with given columns, this is only for testing.
+/*
 if(isset($_POST["Create"]))
 {
   $error = CheckFileValidation();
@@ -178,6 +179,6 @@ if(isset($_POST["Create"]))
       }
     }
     SendResponse($error);
-  }
+  }*/
 
 ?>
